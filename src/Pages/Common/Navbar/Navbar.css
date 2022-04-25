@@ -9,6 +9,9 @@ nav {
   background-color: #fff;
   font-family: 'Poppins', sans-serif;
 }
+.navChange{
+  background-color: rgb(14, 116, 141);
+}
 nav h1 {
   font-size: 40px;
   font-weight: 400;
@@ -52,12 +55,4 @@ nav div a {
     font-size: 30px;
     cursor: pointer;
   }
-  /* .menuShow a {
-    font-size: 22px;
-    display: block;
-    position: relative;
-    right: 0;
-    bottom: -50px;
-    transition: 1s;
-  } */
 }

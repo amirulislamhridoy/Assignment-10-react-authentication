@@ -1,5 +1,5 @@
 .services{
-    width:  75%;
+    width:  70%;
     margin: 0 auto;
 }
 .services h1{
@@ -34,4 +34,13 @@
 .service button{
     padding: 5px 10px;
     border-radius: 8px;
+    font-size: 20px;
+    background-color: rgb(89, 162, 180);
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+.service button:hover{
+    color: rgb(14, 116, 141);
+    background-color: #fff;
 }

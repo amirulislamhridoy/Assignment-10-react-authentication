@@ -41,6 +41,6 @@
 }
 .banner-container button:hover{
     background-color: transparent;
-    border: 2px solid #fff;
+    border: 2px solid rgb(14, 116, 141);
     color: rgb(14, 116, 141);
 }

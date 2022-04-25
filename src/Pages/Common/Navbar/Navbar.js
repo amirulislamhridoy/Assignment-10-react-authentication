@@ -5,9 +5,19 @@ import { AiOutlineMenuFold } from "react-icons/ai";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
+  const [navbar, setNavbar] = useState(false);
+  
+  const handleHeaderBgColorChange = () => {
+    if(window.scrollY >= 100){
+      setNavbar(true)
+    }else{
+      setNavbar(false)
+    }
+  }
+  window.addEventListener('scroll', handleHeaderBgColorChange)
 
   return (
-    <nav>
+    <nav className={`${navbar && 'navChange'}`}>
       <h1>Doctor Carter</h1>
       <div className={`${menu ? "menuShow" : "menuHide"}`}>
         <Link to="/">Home</Link>

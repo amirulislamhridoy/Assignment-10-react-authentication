@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./Services.css";
 
 const Services = () => {
@@ -13,11 +14,13 @@ const Services = () => {
       <h1>Services</h1>
       <div className="services-container">
         {services.map((service) => (
-          <div className="service">
+          <div className="service" key={service.id}>
             <img src={service?.picture} alt="" />
             <h2>{service?.name}</h2>
             <p>{service?.about}</p>
-            <button>Click</button>
+            <Link to={`/checkout/${service.id}`}>
+            <button>Check Out</button>
+            </Link>
           </div>
         ))}
       </div>

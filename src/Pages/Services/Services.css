@@ -1,0 +1,37 @@
+.services{
+    width:  75%;
+    margin: 0 auto;
+}
+.services h1{
+    text-align: center;
+    margin-top: 60px;
+    color: rgb(14, 116, 141);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px 40px;
+}
+.service h2{
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0;
+}
+.service{
+    padding: 20px;
+    border: 2px solid rgba(128, 128, 128, 0.288);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.384);
+}
+.service p{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.service img{
+    width: 100%;
+}
+.service button{
+    padding: 5px 10px;
+    border-radius: 8px;
+}

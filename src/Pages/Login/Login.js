@@ -10,9 +10,12 @@ const Login = () => {
       <div>
         <h2>Login</h2>
         <form onSubmit={handleFromSubmit}>
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
-          <input type="submit" />
+          <label htmlFor="email">Email</label>
+          <input id="email" type="email" placeholder="Email" />
+          <label htmlFor="password">Password</label>
+          <input id="password" type="password" placeholder="Password" />
+          
+          <input type="submit" value="Login" />
         </form>
       </div>
     </div>

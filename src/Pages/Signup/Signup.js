@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import auth from "../../firebase.init";
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Signup = () => {
     const [email, setEmail] = useState('')
@@ -26,6 +26,11 @@ const Signup = () => {
     e.preventDefault()
     if(password !== confirmPass){
         setMyError("Password don't match");
+        return
+    }
+    if(!/.{6,}/.test(password) || !/.{6,}/.test(confirmPass)){
+        setMyError('Minium 6 character')
+        return
     }
     createUserWithEmailAndPassword(email, password)
   };
@@ -50,8 +55,9 @@ const Signup = () => {
           />
           {myError && <h3 style={{color: 'red'}}>{myError}</h3>}
           {error && <h3 style={{color: 'red'}}>{error.code}</h3>}
-          <input type="submit" value="Sign Up" />
+          <input id="error" type="submit" value="Sign Up" />
         </form>
+        <p><h3><Link to="/login">Already have an account?</Link></h3></p>
       </div>
     </div>
   );

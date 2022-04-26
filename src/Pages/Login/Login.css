@@ -17,11 +17,18 @@ input {
   background: #e0e0e0;
   box-shadow: 14px 14px 28px #808080, -14px -14px 28px #ffffff;
   border: 0;
-  
+
 }
 input[type="submit"]{
     cursor: pointer;
     margin-top: 20px;
     font-weight: 600;
     font-family: 'Roboto', sans-serif;
+}
+.login a{
+  text-decoration: none;
+  color: black;
+}
+.login a:hover{
+  color: blue;
 }

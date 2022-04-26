@@ -1,34 +1,10 @@
-.login {
-  display: flex;
-  justify-content: center;
-}
-label{
-  display: block;
-  font-size: 20px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-}
-input {
-  display: block;
-  font-size: 20px;
-  padding: 10px 20px;
-  margin: 10px 0;
-  border-radius: 48px;
-  background: #e0e0e0;
-  box-shadow: 14px 14px 28px #808080, -14px -14px 28px #ffffff;
-  border: 0;
-
-}
-input[type="submit"]{
+.login-h3-span{
+    margin-bottom: 0;
     cursor: pointer;
-    margin-top: 20px;
-    font-weight: 600;
-    font-family: 'Roboto', sans-serif;
 }
-.login a{
-  text-decoration: none;
-  color: black;
+.login-h3-span:hover{
+    color: blue;
 }
-.login a:hover{
-  color: blue;
+.login-h3{
+    margin-top: 0;
 }

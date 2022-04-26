@@ -1,0 +1,37 @@
+.or-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.or-container div{
+    height: 2px;
+    width: 50%;
+    background-color: gray;
+}
+.or-container p{
+    padding: 10px;
+    margin: 0;
+}
+.social-login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.facebook button{
+    padding: 5px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgb(89, 162, 180);
+    cursor: pointer;
+}
+.icon{
+    font-size: 26px;
+    color: #fff;
+    padding-right: 10px;
+}
+.facebook span{
+    font-size: 20px;
+    color: #fff;
+}

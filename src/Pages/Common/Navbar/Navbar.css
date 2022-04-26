@@ -23,6 +23,16 @@ nav div a {
   font-size: 20px;
   font-weight: 600;
 }
+nav button{
+  margin-left: 20px;
+  border: 0;
+  background-color:rgb(14, 116, 141);
+  font-size: 20px;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
 .menuHide a {
   font-size: 22px;
   margin-left: 20px;
@@ -34,8 +44,12 @@ nav div a {
 }
 @media screen and (max-width: 576px) {
   nav {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
+    padding: 0;
+  }
+  nav button{
+    margin-left: 0;
   }
   .menuHide {
     font-size: 22px;
@@ -48,6 +62,7 @@ nav div a {
       display: flex;
       bottom: -90px;
       flex-direction: column;
+      margin-left: 20px;
       /* transition: 1s; */
   }
   #menuIcon {

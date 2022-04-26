@@ -12,12 +12,12 @@ const Footer = () => {
             </div>
             <div>
                 <h2>Services</h2>
-                <p>Neurology Clinic</p>
-                <p>Ophthalmlogy clinical services</p>
-                <p>Laryngological clinical services</p>
-                <p>Orthopaedic Clinic</p>
-                <p>Pulmonary Clinical Services</p>
-                <p>Hepatology Clinic</p>
+                <p>Neurology</p>
+                <p>Ophthalmlogy</p>
+                <p>Laryngological</p>
+                <p>Orthopaedic</p>
+                <p>Pulmonary</p>
+                <p>Hepatology</p>
             </div>
             <div>
                 <h2>Opening Hours</h2>

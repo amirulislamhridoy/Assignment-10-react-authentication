@@ -31,6 +31,8 @@ const Navbar = () => {
       <h1>Dr. Luke Slater</h1>
       <div className={`${menu ? "menuShow" : "menuHide"}`}>
         <Link to="/">Home</Link>
+        <Link to="/blogs">Blogs</Link>
+        <Link to="/about">About</Link>
         {user ? (
           <button onClick={handleSignOut}>Sign Out</button>
         ) : (

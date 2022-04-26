@@ -3,8 +3,8 @@ import './App.css';
 import Checkout from './Pages/Checkout/Checkout';
 import Footer from './Pages/Common/Footer/Footer';
 import Navbar from './Pages/Common/Navbar/Navbar';
-import Feature from './Pages/Feature/Feature';
 import Home from './Pages/Home/Home';
+import Login from './Pages/Login/Login';
 
 function App() {
   return (
@@ -12,8 +12,8 @@ function App() {
       <Navbar></Navbar>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
-        <Route path="/feature" element={<Feature />} />
         <Route path="/checkout/:id" element={<Checkout />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
       <Footer></Footer>
     </div>

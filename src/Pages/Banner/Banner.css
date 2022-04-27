@@ -44,3 +44,18 @@
     border: 2px solid rgb(14, 116, 141);
     color: rgb(14, 116, 141);
 }
+
+@media (max-width: 992px){
+    .banner{
+        height: 400px;
+    }
+    .banner-container{
+        width: 90%;
+    }
+    .banner-container h1{
+        font-size: 30px;
+    }
+    .banner-container button{
+        padding: 10px 20px;
+    }
+}

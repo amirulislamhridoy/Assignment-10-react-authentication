@@ -14,3 +14,17 @@ footer h2{
 footer p{
     color: rgba(255, 255, 255, 0.572);
 }
+
+@media (max-width: 992px){
+    footer{
+        padding: 0 5%;
+    }
+}
+@media (max-width: 768px){
+    footer{
+        display: block;
+        padding-top: 50px;
+        padding-bottom: 35px;
+        margin-top: 50px;
+    }
+}

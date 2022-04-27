@@ -1,3 +1,18 @@
+# Dr. Luke Slater[https:www.google.com/]
+
+* sign up
+* sign in
+* password reset
+* private or protected route
+* my goal
+
+1. react icons
+2. react firebase hooks
+3. firebase 
+4. react router
+5. react toast
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

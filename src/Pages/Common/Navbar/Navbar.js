@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import { Link, useNavigate } from "react-router-dom";
 import { AiOutlineMenuFold } from "react-icons/ai";
+import { GiTireIronCross } from "react-icons/gi";
 import auth from "../../../firebase.init";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { signOut } from "firebase/auth";
@@ -10,7 +11,7 @@ const Navbar = () => {
   const [menu, setMenu] = useState(false);
   const [navbar, setNavbar] = useState(false);
   const [user, loading, error] = useAuthState(auth);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const handleHeaderBgColorChange = () => {
     if (window.scrollY >= 100) {
@@ -23,7 +24,7 @@ const Navbar = () => {
 
   const handleSignOut = () => {
     signOut(auth);
-    navigate('/login')
+    navigate("/login");
   };
 
   return (
@@ -39,7 +40,11 @@ const Navbar = () => {
           <Link to="/login">Login</Link>
         )}
       </div>
-      <AiOutlineMenuFold onClick={() => setMenu(!menu)} id="menuIcon" />
+      {menu ? (
+        <GiTireIronCross onClick={() => setMenu(!menu)} id="menuIcon" />
+      ) : (
+        <AiOutlineMenuFold onClick={() => setMenu(!menu)} id="menuIcon" />
+      )}
     </nav>
   );
 };

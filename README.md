@@ -1,4 +1,4 @@
-# Dr. Luke Slater(https://assignment-10-doctor-1d2b0.web.app/)
+# [Dr. Luke Slater](https://assignment-10-doctor-1d2b0.web.app/)
 ## [Dr. Luke Slater](https://assignment-10-doctor-1d2b0.web.app/)
 
 * sign up

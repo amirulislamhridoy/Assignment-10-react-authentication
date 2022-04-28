@@ -23,6 +23,13 @@ nav div a {
   font-size: 20px;
   font-weight: 600;
 }
+.active{
+  color: rgb(218, 131, 32);
+  border-bottom: 2px solid rgb(218, 131, 32);
+}
+.active-link{
+  color: blue;
+}
 nav button{
   margin-left: 20px;
   border: 0;

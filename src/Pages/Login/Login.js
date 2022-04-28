@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
 import "./Login.css";
 import { ToastContainer, toast } from 'react-toastify';
@@ -9,6 +9,7 @@ import { isReactNative } from "@firebase/util";
 import SocialLogin from "../SocialLogin/SocialLogin";
 
 const Login = () => {
+  const location = useLocation()
   const navigate = useNavigate()
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -32,9 +33,9 @@ const Login = () => {
     sendPasswordResetEmail(email)
     toast.success("Send Reset Password Email")
   };
-
+  let from = location.state?.from?.pathname || "/";
   if(user){
-    navigate('/')
+    navigate(from)
   }
   if(error){
     toast.error(error.code)
